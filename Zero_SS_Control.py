@@ -22,7 +22,7 @@ if __name__ == "__main__":
     ser.open()
 
     # prepare socket
-    hostname = "192.168.3.18"
+    hostname = "192.168.76.27"
     # hostname = "172.24.143.124" #发送端ip zerotier
     port = 1212
 

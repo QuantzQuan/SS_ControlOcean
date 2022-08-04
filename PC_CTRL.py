@@ -18,16 +18,15 @@ class Server:
         self.server.close()
 
 
-
 def socket_transport(cur_string=None, wait_time=None):
-    host = socket.gethostname()
+    host = "192.168.76.139"
     port = 1212
     server = Server(host, port)
     try:
         connection, addr = server.server.accept()
         print(cur_string.encode('utf-8'))
         connection.send(cur_string.encode('utf-8'))
-        time.sleep(wait_time)
+        time.sleep(0.5)
         print("Send!")
         connection.close()
     except ConnectionResetError as error:
