@@ -19,7 +19,7 @@ class Server:
 
 
 def socket_transport(cur_string=None, wait_time=None):
-    host = "192.168.76.139"
+    host = "192.168.76.139"     # sending device's IP
     port = 1212
     server = Server(host, port)
     try:
