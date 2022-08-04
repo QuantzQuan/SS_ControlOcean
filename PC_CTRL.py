@@ -26,7 +26,7 @@ def socket_transport(cur_string=None, wait_time=None):
         connection, addr = server.server.accept()
         print(cur_string.encode('utf-8'))
         connection.send(cur_string.encode('utf-8'))
-        time.sleep(0.5)
+        time.sleep(0.5)        # this time is important!!
         print("Send!")
         connection.close()
     except ConnectionResetError as error:
