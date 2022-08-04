@@ -22,8 +22,8 @@ if __name__ == "__main__":
     ser.open()
 
     # prepare socket
-    hostname = "192.168.76.27"
-    # hostname = "172.24.143.124" #发送端ip zerotier
+    hostname = "192.168.76.27"    # sending device's IP
+    # hostname = "172.24.143.124" # sending device's IP zerotier
     port = 1212
 
     while True:
