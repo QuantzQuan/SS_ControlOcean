@@ -13,7 +13,7 @@ class Server():
 
 
 if __name__ == "__main__":
-    host = socket.gethostname()
+    host = "192.168.4.4"
     port = 1212
     server = Server(host, port)
     while True:
