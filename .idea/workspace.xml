@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="623a66d8-83b6-48bd-99da-99888ceb051c" name="更改" comment="Use on PC to send Socket command">
+      <change afterPath="$PROJECT_DIR$/Check_ip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PC_CTRL.py" beforeDir="false" afterPath="$PROJECT_DIR$/PC_CTRL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Zero_SS_Control.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zero_SS_Control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/socket_Tx.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/socket_Tx.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2BvFH8P3PCvTnJxahDwicNgoY97" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,7 +44,29 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.Zero_SS_Control (1)">
+  <component name="RunManager" selected="Python.Check_ip">
+    <configuration name="Check_ip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Socket_String" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Check_ip.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Keyboard_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Socket_String" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,28 +103,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PC_CTRL.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Serial_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Socket_String" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Serial_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Zero_SS_Control (1)" />
+        <item itemvalue="Python.Check_ip" />
         <item itemvalue="Python.PC_CTRL (1)" />
-        <item itemvalue="Python.Keyboard_test" />
+        <item itemvalue="Python.Zero_SS_Control (1)" />
         <item itemvalue="Python.socket_Tx" />
-        <item itemvalue="Python.Serial_test" />
+        <item itemvalue="Python.Keyboard_test" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +178,11 @@
       <workItem from="1657810620648" duration="1490000" />
       <workItem from="1657873021145" duration="5854000" />
       <workItem from="1657890791332" duration="2346000" />
-      <workItem from="1659628333330" duration="4061000" />
+      <workItem from="1659628333330" duration="4409000" />
+      <workItem from="1659691235459" duration="9017000" />
+      <workItem from="1659781896220" duration="886000" />
+      <workItem from="1659786391184" duration="5921000" />
+      <workItem from="1659840794595" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="Use on PC to send Socket command">
       <created>1659632623131</created>
@@ -182,7 +191,35 @@
       <option name="project" value="LOCAL" />
       <updated>1659632623131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Use on PC to send Socket command">
+      <created>1659632937156</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659632937156</updated>
+    </task>
+    <task id="LOCAL-00003" summary="recieve command from PC and send to Arduino by Serial">
+      <created>1659632964905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659632964905</updated>
+    </task>
+    <task id="LOCAL-00004" summary="workspace">
+      <created>1659632982888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659632982888</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Use on PC to send Socket command">
+      <created>1659633156164</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659633156164</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,19 +235,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="recieve command from PC and send to Arduino by Serial" />
+    <MESSAGE value="workspace" />
     <MESSAGE value="Use on PC to send Socket command" />
     <option name="LAST_COMMIT_MESSAGE" value="Use on PC to send Socket command" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SS_Control$Zero_SS_Control__1_.coverage" NAME="Zero_SS_Control (1) 覆盖结果" MODIFIED="1659630721171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SS_Control$Zero_SS_Control__1_.coverage" NAME="Zero_SS_Control (1) 覆盖结果" MODIFIED="1659698422982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Socket_String$socket_Tx.coverage" NAME="socket_Tx 覆盖结果" MODIFIED="1657875101804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/SS_Control$socket_Tx.coverage" NAME="socket_Tx 覆盖结果" MODIFIED="1659694794234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Socket_String$Serial_test.coverage" NAME="Serial_test 覆盖结果" MODIFIED="1657811935055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Socket_String$socket_Rx.coverage" NAME="socket_Rx 覆盖结果" MODIFIED="1657809909132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SS_Control$Check_ip.coverage" NAME="Check_ip 覆盖结果" MODIFIED="1659841019063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Socket_String$Zero_SS_Control__1_.coverage" NAME="Zero_SS_Control (1) 覆盖结果" MODIFIED="1657892654642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Socket_String$Keyboard_test.coverage" NAME="Keyboard_test 覆盖结果" MODIFIED="1657892554208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Socket_String$PC_CTRL__1_.coverage" NAME="PC_CTRL (1) 覆盖结果" MODIFIED="1657892856410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SS_Control$PC_CTRL__1_.coverage" NAME="PC_CTRL (1) 覆盖结果" MODIFIED="1659630366544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SS_Control$PC_CTRL__1_.coverage" NAME="PC_CTRL (1) 覆盖结果" MODIFIED="1659790724684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
