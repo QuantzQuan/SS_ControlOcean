@@ -6,32 +6,35 @@ MOTOR_CONTROL_TIME = 0.5
 BUMP_FULL_TIME = 2
 LIGHT_STATE = 0
 SERVO_CRUL_TIME = 5
+connection = None
 
 
 class Server:
     def __init__(self, host, port):
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server.bind((host, port))
-        self.server.listen(5)
+        self.server.listen(128)
 
     def server_close(self):
         self.server.close()
 
 
-def socket_transport(cur_string=None, wait_time=None):
-    host = "192.168.76.139"     # sending device's IP
-    port = 1212
-    server = Server(host, port)
+host = socket.gethostname()  # sending device's IP
+port = 1212
+PC = Server(host, port)
+while connection is None:
     try:
-        connection, addr = server.server.accept()
-        print(cur_string.encode('utf-8'))
-        connection.send(cur_string.encode('utf-8'))
-        time.sleep(0.5)        # this time is important!!
-        print("Send!")
-        connection.close()
+        connection, addr = PC.server.accept()
     except ConnectionResetError as error:
         pass
-    server.server_close()
+
+
+def socket_transport(cur_string=None, wait_time=None):
+    print(cur_string.encode('utf-8'))
+    connection.send(cur_string.encode('utf-8'))
+    time.sleep(0.05)  # this time is important!!
+    print("Send!")
+    # PC.server_close()
 
 
 def motor_forward():
@@ -107,10 +110,10 @@ def light_off():
 
 
 if __name__ == '__main__':
-    keyboard.add_hotkey('up', motor_forward)
-    keyboard.add_hotkey('down', motor_backward)
-    keyboard.add_hotkey('left', motor_left)
-    keyboard.add_hotkey('right', motor_right)
+    keyboard.add_hotkey('w', motor_forward)
+    keyboard.add_hotkey('s', motor_backward)
+    keyboard.add_hotkey('a', motor_left)
+    keyboard.add_hotkey('d', motor_right)
     keyboard.add_hotkey('1', bump_1)
     keyboard.add_hotkey('2', bump_2)
     keyboard.add_hotkey('3', bump_3)
@@ -120,3 +123,5 @@ if __name__ == '__main__':
     keyboard.add_hotkey('k', light_on)
     keyboard.add_hotkey('l', light_off)
     keyboard.wait()
+    if KeyboardInterrupt:
+        PC.server_close()
