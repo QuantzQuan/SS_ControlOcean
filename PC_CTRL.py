@@ -6,7 +6,6 @@ MOTOR_CONTROL_TIME = 0.5
 BUMP_FULL_TIME = 2
 LIGHT_STATE = 0
 SERVO_CRUL_TIME = 5
-connection = None
 
 
 class Server:
@@ -22,11 +21,7 @@ class Server:
 host = socket.gethostname()  # sending device's IP
 port = 1212
 PC = Server(host, port)
-while connection is None:
-    try:
-        connection, addr = PC.server.accept()
-    except ConnectionResetError as error:
-        pass
+connection, addr = PC.server.accept()
 
 
 def socket_transport(cur_string=None, wait_time=None):
