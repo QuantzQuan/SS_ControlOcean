@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623a66d8-83b6-48bd-99da-99888ceb051c" name="更改" comment="Use on PC to send Socket command">
-      <change afterPath="$PROJECT_DIR$/Check_ip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC_CTRL.py" beforeDir="false" afterPath="$PROJECT_DIR$/PC_CTRL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zero_SS_Control.py" beforeDir="false" afterPath="$PROJECT_DIR$/Zero_SS_Control.py" afterDir="false" />
+    <list default="true" id="623a66d8-83b6-48bd-99da-99888ceb051c" name="更改" comment="workspace">
       <change beforePath="$PROJECT_DIR$/test/socket_Tx.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/socket_Tx.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +178,7 @@
       <workItem from="1659691235459" duration="9017000" />
       <workItem from="1659781896220" duration="886000" />
       <workItem from="1659786391184" duration="5921000" />
-      <workItem from="1659840794595" duration="1950000" />
+      <workItem from="1659840794595" duration="2262000" />
     </task>
     <task id="LOCAL-00001" summary="Use on PC to send Socket command">
       <created>1659632623131</created>
@@ -219,7 +215,35 @@
       <option name="project" value="LOCAL" />
       <updated>1659633156164</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Use on PC to send Socket command">
+      <created>1659842798878</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659842798878</updated>
+    </task>
+    <task id="LOCAL-00007" summary="recieve command from PC and send to Arduino by Serial">
+      <created>1659843042210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659843042210</updated>
+    </task>
+    <task id="LOCAL-00008" summary="check all ip device">
+      <created>1659843056956</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659843056956</updated>
+    </task>
+    <task id="LOCAL-00009" summary="workspace">
+      <created>1659843069109</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659843069109</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,10 +262,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="recieve command from PC and send to Arduino by Serial" />
-    <MESSAGE value="workspace" />
     <MESSAGE value="Use on PC to send Socket command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use on PC to send Socket command" />
+    <MESSAGE value="recieve command from PC and send to Arduino by Serial" />
+    <MESSAGE value="check all ip device" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SS_Control$Zero_SS_Control__1_.coverage" NAME="Zero_SS_Control (1) 覆盖结果" MODIFIED="1659698422982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
