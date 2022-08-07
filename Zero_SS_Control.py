@@ -15,7 +15,7 @@ class Client:
 
 if __name__ == "__main__":
     # under windows system
-    ser = serial.Serial("/dev/ttyUSB1", 115200, timeout=0.5)
+    ser = serial.Serial("com1", 115200, timeout=0.5)
     # # under raspy
     # ser = serial.Serial("/dev/ttyUSB0", 115200, timeout=0.5)
 
@@ -24,23 +24,17 @@ if __name__ == "__main__":
         ser.close()
 
     # prepare socket
-    hostname = "192.168.50.137"  # sending device's IP
+    hostname = "192.168.43.116"  # sending device's IP
     # hostname = "172.24.143.124" # sending device's IP zerotier
     port = 1212
     Raspi_Zero = Client()
-    while CONNECT_FLAG != 0:
-        try:
-            CONNECT_FLAG = Raspi_Zero.client.connect_ex((hostname, port))
-        except:
-            pass
+    ser.open()
 
     while True:
-        ser.open()
+        Raspi_Zero.client.connect_ex((hostname, port))
         cur_string = Raspi_Zero.client.recv(1024)
         print(cur_string)
         ser.write(cur_string + b'\n')
         ser.flushOutput()
-        ser.close()
         time.sleep(0.1)
-        if KeyboardInterrupt:
-            Raspi_Zero.close()
+
